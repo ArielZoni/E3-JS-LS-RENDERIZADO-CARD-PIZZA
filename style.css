@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: #252525;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 70px;
+}
+
+h1 {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h2 { 
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+P{
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem;
+}
+
+.add-form {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.input-container {
+  display: flex;
+}
+
+.input-number{
+  display: flex;
+  background-color: #3b3b3b;
+  outline: none;
+  border: none;
+  padding: 15px 10px;
+  border-radius: 0px 8px 8px 0px;
+  width: 250px;
+  color: white;
+  padding-left: 5px;
+}
+
+.input-text::placeholder {
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+.input-container img {
+  width: 34px;
+  background-color: #3b3b3b;
+  border-radius: 8px 0px 0px 8px;
+  padding: 0.7rem;
+}
+
+.add-btn {
+  background: #282828;
+  outline: none;
+  border: 0px solid;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gradient-span {
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+
+#resul-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.fa-triangle-exclamation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text; 
+}
+.card {
+  background: #141414;
+  color: rgb(226, 226, 226);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  padding: 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card_img{
+  border-radius: 8px;
+}
+
+.card_body{
+  gap: 30px;
+}
+span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.deleteAll-btn {
+  margin-top: 30px;
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  background: linear-gradient(135deg, #cb5eee 0%, #4be1ec 100%);
+  outline: none;
+  border: 0px solid;
+  padding: 15px 40px;
+  border-radius: 8px;
+  color: rgb(226, 226, 226);
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 700;
+  width: min(550px, 90%);
+}
+
+.deleteAll-btn:hover {
+  background: -webkit-linear-gradient(135deg, #c149e9 0%, #2bc7d2 100%);
+  background: linear-gradient(135deg, #c149e9 0%, #2bc7d2 100%);
+}
+
+.add-btn:hover {
+  background-color: #252525;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+footer {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 50px 0px;
+}
+
+.my{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .input-text {
+    width: 100%;
+  }
+
+  .input-container {
+    width: 95%;
+  }
+
+  .add-container {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .todo-container {
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-btn {
+    width: 95%;
+  }
+}
